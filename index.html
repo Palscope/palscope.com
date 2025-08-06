@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find compatible League of Legends teammates for Clash, Flex, and Duo queue through Discord.">
+    <title>Palscope — Team Finder for League of Legends</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0 40px;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2c5aa0;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        main {
+            flex: 1;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #5865f2;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 18px 40px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(88, 101, 242, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #4752c4;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(88, 101, 242, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-top: 1px solid #eee;
+            margin-top: 80px;
+        }
+
+        .disclaimer {
+            font-size: 0.9rem;
+            color: #777;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .contact a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 16px 32px;
+            }
+
+            header {
+                padding: 40px 0 30px;
+            }
+
+            main {
+                padding: 20px 0;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.75rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 14px 28px;
+                display: block;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Palscope</h1>
+            <p class="tagline">Find Your Next 5-Stack for Flex and Clash or a Duo Partner Instantly</p>
+        </header>
+
+        <main>
+            <p class="description">
+                Palscope helps League of Legends players connect with compatible teammates for Clash, Flex, or Duo queue—right from Discord.
+            </p>
+
+            <a href="https://discord.gg/px34fNYF2H" class="cta-button" target="_blank" rel="noopener noreferrer">
+                Join Our Discord
+            </a>
+        </main>
+
+        <footer>
+            <div class="disclaimer">
+                Palscope isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+            </div>
+            <div class="contact">
+                Contact: <a href="mailto:palscopeorg@gmail.com">palscopeorg@gmail.com</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
