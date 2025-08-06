@@ -58,13 +58,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 15px;
             margin-bottom: 10px;
         }
 
-        .logo-image {
-            max-width: 300px;
-            height: auto;
-            max-height: 80px;
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4dc3d9;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         .tagline {
@@ -147,9 +154,17 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .logo-image {
-                max-width: 250px;
-                max-height: 70px;
+            .logo-text {
+                font-size: 2rem;
+            }
+
+            .logo-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .logo-container {
+                gap: 12px;
             }
 
             .tagline {
@@ -179,9 +194,17 @@
         }
 
         @media (max-width: 480px) {
-            .logo-image {
-                max-width: 200px;
-                max-height: 60px;
+            .logo-text {
+                font-size: 1.75rem;
+            }
+
+            .logo-icon {
+                width: 45px;
+                height: 45px;
+            }
+
+            .logo-container {
+                gap: 10px;
             }
 
             .tagline {
@@ -202,7 +225,33 @@
     <div class="container">
         <header>
             <div class="logo-container">
-                <img src="./logo-full.png" alt="Palscope Logo" class="logo-image">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="crosshairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4dc3d9;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <!-- Crosshair circle -->
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="url(#crosshairGradient)" stroke-width="4"/>
+                    
+                    <!-- Crosshair points -->
+                    <rect x="47" y="8" width="6" height="14" fill="#4dc3d9"/>
+                    <rect x="47" y="78" width="6" height="14" fill="#4dc3d9"/>
+                    <rect x="8" y="47" width="14" height="6" fill="#4dc3d9"/>
+                    <rect x="78" y="47" width="14" height="6" fill="#4dc3d9"/>
+                    
+                    <!-- People figures -->
+                    <!-- Left person (cyan) -->
+                    <circle cx="40" cy="35" r="5" fill="#4dc3d9"/>
+                    <path d="M32 45 Q32 50 40 55 Q40 60 40 65 Q40 68 42 68 L38 68 Q35 68 35 65 Q35 60 35 55 Q27 50 27 45 Z" fill="#4dc3d9"/>
+                    
+                    <!-- Right person (blue) -->
+                    <circle cx="60" cy="35" r="5" fill="#3b82f6"/>
+                    <path d="M68 45 Q68 50 60 55 Q60 60 60 65 Q60 68 58 68 L62 68 Q65 68 65 65 Q65 60 65 55 Q73 50 73 45 Z" fill="#3b82f6"/>
+                </svg>
+                <h1 class="logo-text">Palscope</h1>
             </div>
             <p class="tagline">Find Your Next 5-Stack for Flex and Clash or a Duo Partner Instantly</p>
         </header>
