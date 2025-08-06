@@ -16,11 +16,10 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #ffffff;
-            /* Use GitHub Pages URL instead of raw GitHub URL */
-            background: url('https://palscope.github.io/background.jpg') center center/cover no-repeat fixed,
-                        url('./background.jpg') center center/cover no-repeat fixed,
+            /* Use relative path - works with any hosting */
+            background: url('./background.jpg') center center/cover no-repeat fixed,
                         linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            /* Fallback for when all images fail */
+            /* Fallback for when image fails to load */
             background-color: #1a1a2e;
         }
 
